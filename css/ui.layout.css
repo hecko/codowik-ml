@@ -222,4 +222,7 @@ iframe.ui-layout-mask {}	/* extra mask for objects/applets */
 		height:		auto !important;
 		overflow:	visible !important;
 	}
+	.no-print, .no-print {
+                display:        none !important;
+        }
 }

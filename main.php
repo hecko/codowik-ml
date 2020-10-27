@@ -197,7 +197,7 @@ jQuery(function ()
             
             
             
-        <div id="dokuwiki__sitetools">
+        <div id="dokuwiki__sitetools" class="no-print">
             <h3 class="a11y"><?php echo $lang['site_tools']; ?></h3>
             <?php tpl_searchform(); ?>
             <!--<div class="mobileTools">
