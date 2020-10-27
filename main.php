@@ -182,11 +182,13 @@ jQuery(function ()
             $logo = tpl_getMediaFile(array(':wiki:logo.png', ':logo.png', 'images/codo_logo_s.png'), false, $logoSize);
 
             // display logo and wiki title in a link to the home page
-            tpl_link(
+	    /**
+	    tpl_link(
                 wl(),
                 '<img src="'.$logo.'" '.$logoSize[3].' alt="" /> <span>'.$conf['title'].'</span>',
                 'accesskey="h" title="[H]"'
-            );
+	    );
+	    */
         ?></h1>
         <?php if ($conf['tagline']): ?>
             <p class="claim"><?php echo $conf['tagline']; ?></p>
@@ -204,8 +206,8 @@ jQuery(function ()
             <ul id="codowiki_search_ul">
                 <?php
                     tpl_action('recent', 1, 'li');
-                    tpl_action('media', 1, 'li');
-                    tpl_action('index', 1, 'li');
+                    //tpl_action('media', 1, 'li');
+                    // tpl_action('index', 1, 'li');
                 ?>
             </ul>
         </div>
